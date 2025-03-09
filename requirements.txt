@@ -1,0 +1,2 @@
+# VA Seed node uses only Python standard libraries
+# No additional packages required
