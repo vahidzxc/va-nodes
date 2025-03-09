@@ -35,7 +35,7 @@ class VA_Seed:
     RETURN_TYPES = ("INT",)
     RETURN_NAMES = ("seed",)
     FUNCTION = "process"
-    CATEGORY = "Seed"
+    CATEGORY = "VA_Seed"
     
     def process(self, 
                 seed: int = 0,
@@ -44,24 +44,19 @@ class VA_Seed:
                 extra_pnginfo: Optional[Dict] = None,
                 my_unique_id: Optional[str] = None) -> tuple:
         
-        # اگر seed تغییر کرده، force_run را فعال می‌کنیم
         if self._last_seed != seed:
             self.force_run = True
         
-        # ذخیره seed فعلی برای مقایسه بعدی
         self._last_seed = seed
         return (seed,)
         
     @classmethod
     def IS_CHANGED(cls, **kwargs) -> float:
-        """کنترل اجرای مجدد نود"""
-        # وقتی force_run فعال است، اجازه اجرای مجدد می‌دهیم
         if hasattr(cls, 'force_run') and cls.force_run:
-            cls.force_run = False  # ریست کردن وضعیت
+            cls.force_run = False  
             return float("nan")
-        return 0  # در غیر این صورت از اجرای مجدد جلوگیری می‌کنیم
+        return 0  
 
-# Node registration
 NODE_CLASS_MAPPINGS = {
     "VA_Seed": VA_Seed
 }
