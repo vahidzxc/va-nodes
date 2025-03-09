@@ -1,0 +1,9 @@
+{
+  "name": "va-nodes",
+  "description": "a few handy node's",
+  "author": "ArtGen",
+  "repo": "vahidzxc/va-nodes",
+  "install": {
+    "pip": ["requirements.txt"]
+  }
+}
