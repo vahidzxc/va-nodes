@@ -35,7 +35,7 @@ class VA_Seed:
     RETURN_TYPES = ("INT",)
     RETURN_NAMES = ("seed",)
     FUNCTION = "process"
-    CATEGORY = "VA_Seed"
+    CATEGORY = "va_nodes"
     
     def process(self, 
                 seed: int = 0,
