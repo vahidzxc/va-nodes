@@ -19,7 +19,7 @@ cd custom_nodes
 
 2. Clone this repository:
 ```bash
-git clone https://github.com/YOUR_USERNAME/va_nodes.git
+git clone https://github.com/vahidzxc/va_nodes.git
 ```
 
 
