@@ -1,0 +1,15 @@
+[project]
+name = "va-nodes"
+description = "A collection of custom nodes for ComfyUI, focusing on improving workflow efficiency and adding new functionality.(work in progress!!!)"
+version = "1.0.0"
+license = {file = "LICENSE"}
+dependencies = ["# VA Seed node uses only Python standard libraries", "# No additional packages required"]
+
+[project.urls]
+Repository = "https://github.com/vahidzxc/va-nodes"
+#  Used by Comfy Registry https://comfyregistry.org
+
+[tool.comfy]
+PublisherId = ""
+DisplayName = "va-nodes"
+Icon = ""
